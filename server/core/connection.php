@@ -1,7 +1,7 @@
 <?php
 
 function make_mysql_connection(){
-    $con = new mysqli('localhost', 'root', 'Ll04021995', 'dungeondex', 3306);
+    $con = new mysqli('localhost', 'root', '####', 'dungeondex', 3306);
 
     if(!$con){
         return make_backup_mysql_connection();
@@ -13,7 +13,7 @@ function make_mysql_connection(){
 }
 
 function make_backup_mysql_connection(){
-    $con = new mysqli('estebandenis.ddns.net', 'root', 'Ll04021995', 'dungeondex', 3306);
+    $con = new mysqli('estebandenis.ddns.net', 'root', '####', 'dungeondex', 3306);
 
     if(!$con){
         return false;
